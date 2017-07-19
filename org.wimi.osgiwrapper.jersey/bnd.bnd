@@ -1,6 +1,10 @@
-Bundle-Version: 1.0.0.${tstamp}
+Bundle-Version: ${ver}
 Bundle-SymbolicName: org.wimi.osgiwrapper.jersey
 Bundle-Description: 	wraps jersey 2.22.2 to OSGi-Bundle using BND
+
+ver: 2.22.2
+
+-outputmask: ${@bsn}-${ver}.jar
 
 -buildpath: \
 	com.fasterxml.jackson.core.jackson-annotations;version=2.5.4,\
